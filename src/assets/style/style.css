@@ -1,0 +1,285 @@
+html,body{ height:100%; padding:0px; font-family:Arial, "微软雅黑"}
+.f_left{float: left;}
+.f_right{float: right;}
+.c_hidden{overflow: hidden;}
+.h1{ font-size:16px; color:#333; font-weight:bold;float: left;height: 40px;line-height: 40px}
+.h1:before{ background:#ff7f00; border-radius:9px; width:8px; height:16px; margin-right:6px; content:" "; display:inline-block; position:relative; top:2px;}
+.h2{ font-size:14px; color:#333; font-weight:bold; margin-top:14px;}
+.h3{ font-size:12px; color:#333; font-weight:bold; margin-bottom:14px;}
+.h4{ font-size:12px; color:#333; font-weight:bold; margin-bottom:14px;}
+.h1:before,.h2:before,.h3:before,.h4:before{ margin-right:6px; content:" "; display:inline-block; position:relative; }
+
+.-fa-user{ font-size: 16px; border-radius:30px; background: #c6ccdd; color: #ffffff; padding: 8px 10px;}
+.-frame-transparent .-frame-body .-frame-body-content{ background: rgba(255,255,255,1);}
+.-login .-loginTd .-loginBox{ background: rgba(255,255,255,0.6);}
+
+.-btn-theme{ background:#3186dc; color:#fff; border:none}
+.-btn-theme:hover{ background:#2671bd !important; color:#fff !important; border:none !important}
+
+.keyWords{ font-size:12px; margin-bottom:0px;}
+.keyWords li{ margin-right:20px; margin-left:20px; padding:0px 16px;height: 32px;}
+.keyWords li.-active{ border-bottom:2px solid #399bff}
+.keyWords li.audit-btn:hover{ color:#0e90d2}
+
+.-icon-down{}
+.-icon-down:after{
+	content:" "; display:inline-block; position: relative; height: 0px;width: 0px;border-top:3px solid transparent;border-left: 3px solid black;border-bottom:3px solid transparent;
+	transform: rotate(90deg); margin-left:6px; top:-1px;
+}
+
+.-table > thead > tr > td{ color:#000; font-weight:bold;white-space: nowrap;}
+.-table > thead > tr > td, .-table > tbody > tr > td{font-size:12px; text-align:center}
+.-table-c > thead > tr > td, .-table-c > tbody > tr > td{ text-align:center}
+.-table > tbody > tr > td.-table-left,.-table > tbody > tr > td.-table-right{ text-align:left}
+.-table.-table-odd-h > thead > tr > td, .-table.-table-odd-h > tbody > tr > td{ text-align:left}
+
+.-windows .windowsBody .windowsTitle{ background:#FFF}
+
+.-btn-switch{ background:#399bff; border:1px solid #399bff; display:inline-block; font-size:12px; cursor:pointer}
+.-btn-switch > span{ background:#fff; float:left; width:50%; color:#666666; padding:0px 4px;}
+.-btn-switch > span.-h{background:#399bff; color:#FFF;}
+
+.right-history{ background:#fafafa; border:1px solid #e6e6e6}
+table tr td.-table-left{ padding:4px; padding-left:20px; padding-right:20px;width:180px; color:#333; background:#fafafa !important; border-right:1px solid #e7e8eb;}
+.-table > tbody > tr > td.-table-right{ padding:4px; padding-left:20px;}
+table tr td.-table-right .-sel select{ border: none}
+table tr td.-table-right .-sel:after{ border-bottom:none; right:0px;}
+table tr td.-table-blue{ background:#fafafa }
+table tr td .-sel-b{ border-bottom:1px solid #b3b3b3}
+table tr td .-sel-b.-sel{ width:140px;}
+table tr td .-sel-b.-sel:after{ border-bottom:0px;}
+
+.inquire{ padding-bottom:80px !important;}
+.inquire ul.-nav{ border-bottom:1px solid #eeeeee;}
+.inquire ul.-nav > li{ margin:0px; min-width:80px; text-align:center}
+.inquire .inquire-box{ margin:auto; max-width:560px;}
+.inquire .inquire-btn{ position:relative}
+.inquire .inquire-btn .-inp{ background:#fafafa; border:1px solid #d5d5d5}
+.inquire .inquire-btn .-btn{ background:#399bff; border:1px solid #399bff;top: 0px; right: 0px; position:absolute}
+.fast-box{ height:48px; background:#f2f2f2; line-height:48px; color:#666666; font-size:12px; border:1px solid #cccccc !important}
+.fast-box,.fast-tab-box{ margin:auto; max-width:1000px;}
+.fast-box > li{ border-right:1px solid #cccccc;width:118px;}
+.fast-box > li.-active{ background:#FFF !important}
+.fast-box > li + li{ margin-left:-3px !important;}
+.fast-tab-box{ border:1px solid #cccccc; border-top:0px; overflow:hidden}
+.fast-tab-box .fast-label{ font-size:12px; width:25%; float:left; padding-left:20px; padding-bottom:20px; padding-top:16px;}
+
+.indexBox{ font-size:12px; border:1px solid #e6e6e6; padding:10px; height:60px; line-height:34px; background:#fafafa; display:block}
+.indexBox img{ margin-right:30px; margin-left:10px;}
+
+.card-switch-s,.card-switch-h{ height:15px; width:15px; display:inline-block; position:relative; top:3px; margin-left:16px; cursor:pointer; float:right}
+
+.informationCard{ background:#f7f7f7; padding:10px 16px;}
+.informationCard > h2{ color:#999999; font-size:14px; padding-bottom:6px; font-weight:bold}
+.informationCard > p{ color:#000000; font-size:12px;}
+
+.loanCard{ padding-top:20px; padding-left:20px}
+.loanCard .loanCardBox{ width:25%; float:left; margin-bottom:10px;height: 54px;}
+.loanCard .loanCardBox > h2{ font-size:14px; color:#666; margin-bottom:5px}
+.loanCard .loanCardBox > p{ color:#000000; font-size:12px; font-weight:bold; height:16px; overflow:hidden; padding-right:20px}
+@media (max-width:1300px){.loanCard .loanCardBox{ width:33.3333%;}}
+@media (max-width:1000px){.loanCard .loanCardBox{ width:33.3333%;}}
+@media (max-width:800px){.loanCard .loanCardBox{ width:50%;}}
+@media (max-width:600px){.loanCard .loanCardBox{ width:100%;}}
+
+.shopCard{}
+.shopCard .shopCardBtn{ margin-bottom:20px;}
+.shopCard .shopCardBtn .shopCardBtn-h ,.shopCard .shopCardBtn .shopCardBtn-s{ background:#FFF; min-width:80px; height:26px; border-radius:6px; line-height:26px; cursor:pointer;outline: 0px;}
+.shopCard .shopCardBtn .shopCardBtn-h{ border:1px solid #399bff; color:#399bff}
+.shopCard .shopCardBtn .shopCardBtn-s{ border:none; color:#666666;}
+.shopCard .shopCardBtn .shopCardBtn-s:hover{ border:none; color:#399bff;}
+.shopCard .-table-odd-h > tbody > tr td:nth-child(odd),.customizelList .-table thead tr td{ background:#fafafa}
+.shopCard .-table > tbody > tr > td a{ color:#399bff;text-decoration: none;}
+@media (max-width:1000px){.shopCard .shopCardTable .-w-6{ width:100%; padding:0px !important}}
+
+.userCard{ display:table; margin-top:20px;}
+.userCard .userCardImg,.userCard .userCardContent,.userCard .userCardApproval,.userCard .userCardApproval-s{ display:table-cell}
+.userCard .userCardImg{ width:150px;}
+.userCard .userCardImg img{ width:120px; height:120px; border-radius:100%}
+.userCard .userCardContent h2{ margin-bottom:10px; font-size:18px;}
+.userCard .userCardContent{ vertical-align:top; padding-top:20px;}
+.userCardBtn-h ,.userCardBtn-s{ height:22px; min-width:80px; border:none; background:#cccccc; color:#fff; border-radius:90px; margin-bottom:8px; padding-right:10px; padding-left:10px}
+.userCardBtn-h{ background:#18c06b}
+.userCard .userCardContent .userCardIcon { margin-bottom:6px; display:inline-block; font-size:12px;}
+.userCard .userCardContent .userCardIcon img{ margin-right:10px;}
+
+.userCard2 .userCardImg{ width:100px}
+.userCard2 .userCardImg img{ width:87px; height:87px}
+.userCard2 .userCardContent{ padding-top:10px;}
+.userCard .userCardContent .userCardIcon img{ margin-right:4px;}
+
+.qualification-h,.qualification-s{display:inline-block; width:140px; height:100px; position:relative;margin-bottom: 30px; margin-right:10px;}
+.qualification-h .qualificationText,.qualification-s .qualificationText{margin: 0px; display:block;background: rgba(255,255,255,0.6); top: 82px; text-align:center; position:relative; font-size:12px;}
+
+.qualificationPrompt{ color:#01b627; position:relative; top:90px; font-size:12px; text-align:center}
+.qualification-h > input ,.qualification-s > input{
+	position:absolute; top:0px; left:0px; z-index:10; height:inherit; width:inherit; overflow:hidden; padding-left:140px;
+}
+.qualification-h > img ,.qualification-s > img{ position:absolute; width:100%; height:100%; border-radius:4px}
+.qualification-bg{ background:rgba(0,0,0,0.8); position:absolute; top:0px; left:0px; width:100%; height:100%; border-radius:5px; text-align:center; display:none}
+.qualification-bg .btn1 input{ width: inherit; height:inherit; padding-left:50px}
+.qualification-bg .btn1 , .qualification-bg .btn2{ display:inline-block; height:33px; width:33px; position:relative; top:25px; overflow:hidden;}
+
+
+.blueBox{ background:#e6f0f9; color:#3299fd; height:32px; line-height:34px}
+.blueBox .fa-star{ margin:0px 15px;}
+
+.apply > ul > li > h2{ font-size:18px; padding-bottom:10px; color:#333}
+.apply > ul > li > div{ padding-bottom:10px}
+.apply > ul > li > p{ font-size:12px; color:#666666}
+.apply > ul > li > p > span{ color:#ff6011; padding-bottom:2px; border-bottom:1px solid #ff6011; padding:0px 2px}
+.apply .applyIcon1,.apply .applyIcon2,.apply .applyIcon3{height:20px; padding-left:24px; font-size:20px; margin-right:10px; display:inline-block; color:#ff6011; font-weight:bold}
+.apply .applyIcon1 span,.apply .applyIcon2 span,.apply .applyIcon3 span{ color:#000000; font-size:12px; padding-left:2px}
+
+.-panel{ font-weight:bold;}
+.-panel .-panel-head{ font-size:12px; background:#fafafa}
+.-panel .-panel-head div.-table > ul > li, ul.-tr > li{ line-height:30px;}
+.-panel .-color-yellow{ color:#ff5500}
+
+.panel-iocn{ height:100%;}
+
+
+ul.stepBox{margin:40px auto; width:50px; position:relative}
+ul.stepBox > li{ color:#999999; font-size:12px; text-align:center; padding-right:40px; position:relative;  width:80px;text-overflow: ellipsis;white-space: nowrap}
+ul.stepBox > li:last-of-type:after{ display:none}
+ul.stepBox > li{ display:none}
+ul.stepBox > li.-h ~ li,ul.stepBox > li.-h { display:table-cell;}
+
+ul.stepSelect{margin:40px auto; width:50px; position:relative}
+ul.stepSelect > li{ color:#999999; font-size:12px; text-align:center; width:80px; padding-right:40px;text-overflow: ellipsis;white-space: nowrap}
+ul.stepSelect > li:last-of-type{ padding-right:0px;}
+ul.stepSelect > li:last-of-type:after{ display:none}
+ul.stepSelect .rightIcon:after{ display:none}
+ul.stepSelect .topIcon{ position:absolute; margin-top:-30px; text-align:center}
+ul.stepSelect .bottomIcon{ position: relative;top:40px; left:-4px;}
+ul.stepSelect .bottomIcon > span{ position:relative; left:20px;}
+ul.stepSelect .bottomIcon:after{ position:relative; top:-62px; left:36px}
+
+.stepBoxBg{ background:#ffebe8; text-align:center; padding:10px; font-size:12px; border-bottom:1px solid #cccccc}
+.stepBoxBg > a{ color:#399bff;}
+
+input[type="text" i].-inp-block.-b-o-none:disabled{ background:#FFF; font-weight:bold}
+textarea.-textarea{ padding:10px 4px;}
+.-bg-yellow{ color:#333333; background: #ffdf25;}
+
+.card-gray{ border:1px solid #cccccc; background:#fafafa; padding:14px 20px; }
+.card-blue{ border:1px solid #cccccc; background:#f2f2f2; padding:14px 20px;}
+.card-white{ background:#FFF; padding:14px 20px;}
+.card-white h2{ font-size:40px; color:#ff7f00; border-bottom:1px solid #e6e6e6; padding-bottom:6px;}
+.card-blue .-table{ margin-bottom:0px; line-height:40px;}
+.card-blue .-table > ul + ul{ border-top:1px solid #cccccc}
+
+.card-switch-s,.card-switch-h{ height:15px; width:15px; display:inline-block; position:relative; top:3px; margin-left:16px; cursor:pointer}
+.has-list a{ color:#333333}
+.open.in{}
+
+.-sel-box .-btn .x{ position:absolute; font-size:16px; margin-left:20px; margin-top:-10px; color:#9b9b9b}
+.card{ background:#f2f2f2; width:100%; display:block; padding:10px; margin-bottom:20px;}
+.card h3{ font-size:14px; margin:10px 0}
+.card2{ background:#FFF; border-radius:4px; border:1px solid #cccccc; min-height:100px; padding:15px 10px; margin-bottom:10px;}
+.card2:hover{ border:1px solid #399bff;}
+
+.card2 .text{ font-size:12px; color:#666; text-align:center}
+.cardAdd{border:1px solid #399bff; position:relative}
+.cardAdd .x,.cardAdd .y{ position:absolute; background:#399bff;left:50%;top:50%}
+.cardAdd .y{ height:35px; width:3px; margin-top:-17.5px;}
+.cardAdd .x{ width:35px; height:3px; margin-left:-17.5px;}
+.cardTemplate{
+	width:140px; height:100px; background:#ffffff; border:1px solid #cccccc; font-size:12px;
+	border-radius:6px; padding:16px 10px; text-align:center; display:inline-block; color:#999;
+	margin-right:14px; position:relative;
+}
+.cardTemplate .cardTemplateIcon1,.cardTemplate .cardTemplateIcon2{
+	display:inline-block;width:36px; height:36px; margin: auto; margin-bottom:10px; cursor:pointer
+}
+
+.cardTemplate.indexBox{
+	width:100%; position:relative; height:60px; overflow:hidden; background:#fafafa; border-radius:0px; padding:10px; border:1px solid #e6e6e6; text-align:left; color:#666;
+}
+.cardTemplate.indexBox .cardTemplateHover{padding-top: 14px;}
+
+
+.select-h,.select-s{ padding:0px 10px; margin-right:10px; font-size:12px; height:26px; border-radius:6px; margin-bottom:10px;}
+.select-s{ border:1px solid #cccccc; background:#ffffff; color:#000}
+
+.-table-list{ border:1px solid #e7e8eb}
+.-table-list > thead tr{ background:#fafafa; border-bottom:1px solid #e7e8eb}
+.-table-list tr td{ border:none !important;}
+
+.controlCard{ overflow:auto; position:relative}
+.controlCardPrompt{
+	position:absolute; bottom:0px; left:0px; width:100%; font-size:12px; padding-left:10px; padding-right:10px;
+	line-height:30px; height:30px; color:#999999
+}
+
+.eventTags{ overflow:hidden; width:100%}
+.eventTags > a{
+	display:inline-block;text-decoration: none; margin-right:30px; height:26px; line-height:26px; padding:0px 20px;
+	border:1px solid #cccccc; border-radius:30px; color:#333333; position:relative; margin-top:4px; margin-bottom:10px;
+}
+.eventTags > a:hover{ background:#f2f2f2}
+
+.-meter.-meter-green{ padding:0px; background:#FFF;box-shadow: none; color:#3fa827; border:1px solid #3fa827}
+.-meter.-meter-green ,.-meter.-meter-green > span{ border-radius:0px;}
+.-meter.-meter-green > span{ background:#3fa827}
+
+.icon-o{ color:#999; font-size:12px}
+.icon-o:before{ content:" "; display:inline-block; margin-right:4px; background:#adadad; border-radius:9px; height:4px; width:4px; position:relative; top:-2px;}
+.-bg-blue{ background:#e6f0f9;}
+
+.inputRight{float:right; position:relative; top:-26px; margin-bottom:-26px; color:#333}
+
+.imgWindows{
+	background:rgba(0,0,0,0.9); position:fixed; top:0px; left:0px; width:100%; height:100%;
+}
+.imgWindows .imgWindowsBox{ height:inherit; width:100%}
+.imgWindows .imgWindowsBox .left{text-align:center; position:relative}
+.imgWindows .imgWindowsBox .left .-x{ color:#FFF; float:right; padding-right:20px; position:absolute; right:10px; top:10px;}
+.imgWindows .imgWindowsBox .left .-x > span{ font-size:16px; position:relative; top:2px; left:-4px;}
+.imgWindows .imgWindowsBox .left .-x:hover{ color:#fff600}
+.imgWindows .imgWindowsBox .left .img{ }
+.imgWindows .imgWindowsBox .right{ width:260px; background:#FFF; height:100%;}
+.imgWindows .imgWindowsBox .right > .-b-b{ border-bottom:10px solid #e6e6e6; padding-bottom:10px; padding-top:10px;}
+.imgWindows .imgWindowsBox .right > .list{ margin:0px 20px;}
+.imgWindows .imgWindowsBox .right > .list > li{ border-bottom:1px solid #e6e6e6; padding:15px 0px; line-height:30px;}
+.imgWindows .imgWindowsBox .right > .list h3{ font-size:14px; color:#666666;}
+.imgWindows .imgWindowsBox .right > .list p{ font-weight:bold; color:#111111}
+
+
+.pagin{position:relative;margin-top:10px;padding:0 12px;}
+.pagin .message{line-height: 30px; font-size:12px; color:#666}
+.pagin .message .blue{ padding:0px 4px;}
+.pagin .blue{color:#056dae;font-style:normal;}
+.pagin .paginList{position:absolute;right:12px;top:0;}
+.pagin .paginList .paginItem{float:left;}
+.pagin .paginList .paginItem a{float:left;width:31px;height:28px;border:1px solid #DDD; text-align:center;line-height:30px;border-left:none;color:#3399d5;}
+.pagin .paginList .paginItem:first-child a{border-left:1px solid #DDD;}
+.pagin .paginList .paginItem:first-child a{border-bottom-left-radius:5px;border-top-left-radius:5px;}
+.pagin .paginList .paginItem:last-child a{border-bottom-right-radius:5px;border-top-right-radius:5px;}
+.pagin .paginList .paginItem.current,.pagin .paginList .paginItem.current a{background:#f5f5f5; cursor:default;color:#737373;}
+.pagin .paginList .paginItem:hover{background:#f5f5f5;}
+.pagin .paginList .paginItem.more,.pagin .paginList .paginItem.more a:hover{ cursor:default;}
+.pagin .paginList .paginItem.more:hover{background:#FFF;}
+.pagin .paginList .paginItem.more a{color:#737373;}
+/*额度管理的table*/
+.table-box{
+	height:100%;overflow: auto;padding-right: 10px;
+}
+@media (max-width:550px){
+	.-frame-give .-frame-body{
+		padding-left: 10px;
+		padding-bottom: 10px;
+	}
+}
+
+/*浮框*/
+.popBox{
+	display: none;
+	top: 30px;
+	right:0;
+	min-width:200px;
+	z-index:99 !important;
+}
+.popHover:hover .popBox{
+	display: block;
+}
