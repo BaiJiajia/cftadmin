@@ -20,14 +20,14 @@
                         v-loading="loading"
                         class="avatar-uploader"
                         name="file"
-                        action="http://192.168.1.127:8080/iadmin.web/pharmacy/uploadimage"
+                        action="http://cft.todosoft.com.cn/pharmacy/uploadimage"
                         :show-file-list="false"
                         :headers={token}
                         :on-progress="uploading"
                         :on-success="handleAvatarSuccess"
                         :on-preview="handlePictureCardPreview"
                         :before-upload="beforeAvatarUpload">
-                        <img v-if="info.imgurl" :src="'http://192.168.1.127:8080/iadmin.web/upload/'+info.imgurl" class="avatar">
+                        <img v-if="info.imgurl" :src="'http://cft.todosoft.com.cn/upload/'+info.imgurl" class="avatar">
                         <i v-else class="el-icon-plus avatar-uploader-icon"></i>
                     </el-upload>
                 </div>

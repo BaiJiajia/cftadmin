@@ -37,7 +37,7 @@
             </el-table-column>
         </el-table>
         <!--新增界面-->
-        <el-dialog title="选择药品" :visible.sync="addFormVisible" width="75%" :close-on-click-modal="false">
+        <el-dialog title="选择药品" :visible.sync="addFormVisible" width="75%" :close-on-click-modal="false" @close="closeDialog">
             <!--工具条-->
             <el-col class="toolbar" style="padding-bottom: 0px;">
                 <el-form :inline="true" style="float:left">
@@ -57,14 +57,16 @@
                 <el-table-column type="selection" width="55"></el-table-column>
                 <el-table-column property="drugname" label="药品名称" min-width="150"></el-table-column>
                 <el-table-column property="drugnumber" label="药品编号" min-width="150"></el-table-column>
-                <el-table-column property="price" label="价格" min-width="150"></el-table-column>
-                <el-table-column property="dosageform" label="生产商" min-width="150"></el-table-column>
-                <el-table-column property="drugtype" label="分类" min-width="150"></el-table-column>
-                <el-table-column property="unit" label="单位" min-width="150"></el-table-column>
-                <el-table-column property="specifiaction" label="规格" min-width="150"></el-table-column>
+                <el-table-column property="approvalnumber" label="批准文号" min-width="150"></el-table-column>
+                <el-table-column property="dosageform" label="剂型" min-width="100"></el-table-column>
+                <el-table-column property="price" label="价格" min-width="100"></el-table-column>
+                <el-table-column property="manufacturer" label="药品生产厂家" min-width="150"></el-table-column>
+                <el-table-column property="drugtype" label="分类" min-width="100"></el-table-column>
+                <el-table-column property="unit" label="单位" min-width="100"></el-table-column>
+                <el-table-column property="specifiaction" label="规格" min-width="100"></el-table-column>
             </el-table>
             <div slot="footer" class="dialog-footer">
-                <el-button @click="addFormVisible = false">取消</el-button>
+                <el-button @click="addFormVisible = false" >取消</el-button>
                 <el-button type="primary" @click.native="addSubmit" :loading="addLoading">提交</el-button>
             </div>
         </el-dialog>
@@ -99,6 +101,12 @@
                 this.addFormVisible = true;
                 
             },
+            // 关闭弹框时，清空弹框内容
+            closeDialog:function(){
+                this.selectedHos = ''
+                this.hospitalDrug = []
+                
+            },
             addSubmit:function(){
                   
                 let ids = this.sels.map(item => item.drugnumber).toString();
@@ -111,6 +119,8 @@
                                 type: 'success'
                             });
                             this.getDrugList()
+                            this.selectedHos = ''
+                            this.hospitalDrug = []
                             this.addFormVisible = false;
                             
                         }
@@ -209,7 +219,7 @@
                 let hosid = this.selectedHos;
                 this.request('/pharmacy/slecthospdraginfo?hosid='+hosid).then(res =>{
                     if(res.data.success){
-                        this.hospitalDrug = res.data.model.model
+                        this.hospitalDrug = res.data.model
                     }else{
                         this.hospitalDrug = []
                     }
